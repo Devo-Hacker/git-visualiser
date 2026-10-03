@@ -1,3 +1,10 @@
 export default {
-  test: { env: { NODE_ENV: "test", LOG_LEVEL: "silent" } },
+  test: {
+    env: {
+      NODE_ENV: "test",
+      LOG_LEVEL: "silent",
+      SUPABASE_URL: "http://127.0.0.1:54321",
+      SUPABASE_SECRET_KEY: "test-secret-key",
+    },
+  },
 };
